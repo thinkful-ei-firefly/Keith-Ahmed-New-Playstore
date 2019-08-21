@@ -2,9 +2,7 @@
 
 const express = require('express');
 const morgan = require('morgan');
-
 const playstore = require('./playstore');
-
 const app = express();
 
 app.use(morgan('dev'));
