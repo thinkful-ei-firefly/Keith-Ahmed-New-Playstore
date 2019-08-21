@@ -30,6 +30,7 @@ function sortStuff(query, apps){
 
 function genreFilter(query, apps){
   apps = apps.filter(app => app.Genres.toLowerCase().includes(query.toLowerCase()));
+  return apps;
 }
 
 app.get('/apps', (req, res) => {
@@ -59,7 +60,7 @@ app.get('/apps', (req, res) => {
 
 });
 
-module.exports = {sortStuff};
+module.exports = {sortStuff, genreFilter};
 
 app.listen(8000, () => {
   console.log('Server on 8000!');
