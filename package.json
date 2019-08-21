@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
     "debug": "ndb app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,13 @@
   },
   "homepage": "https://github.com/thinkful-ei-firefly/playstore-keith-jessica#readme",
   "dependencies": {
+    "chai": "^4.2.0",
     "express": "^4.17.1",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "supertest": "^4.0.2"
   }
 }
