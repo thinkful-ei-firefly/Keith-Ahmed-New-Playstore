@@ -58,8 +58,5 @@ app.get('/apps', (req, res) => {
 
 });
 
-module.exports = {sortStuff, genreFilter};
+module.exports = {sortStuff, genreFilter, app};
 
-app.listen(8000, () => {
-  console.log('Server on 8000!');
-});
