@@ -46,7 +46,7 @@ app.get('/apps', (req, res) => {
         .status(400)
         .send('Genre must be one of the following: "Action", "Puzzle", "Strategy", "Casual", "Arcade", "Card"');
     }
-   
+   apps = genreFilter(genres, apps);
   }
   if (sort) {
     if (!(sort.toLowerCase() === "rating") && !(sort.toLowerCase() === "app")){
